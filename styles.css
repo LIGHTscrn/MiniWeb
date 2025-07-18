@@ -1,0 +1,309 @@
+.site-footer {
+  background-color: #111;
+  color: #f1f1f1;
+  padding: 50px 20px 20px;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+
+.footer-column h3 {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.footer-column p,
+.footer-column li {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #ff6a00;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+
+
+
+.cta-section {
+  background-color: #111; /* dark background for contrast */
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.cta-section .btn {
+  display: inline-block;
+  background-color: #ff6a00;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cta-section .btn:hover {
+  background-color: #e65a00;
+}
+
+
+
+
+.features-section {
+  padding: 20px;
+  text-align: center;
+  background-color: #FAF7F3;
+}
+.feature-list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin: 0;
+  padding: 0;
+}
+.feature-item {
+  font-size: 1.1em;
+  z-index:20;
+  border-radius: 2px;
+}
+.Hero-section {
+  background-image: url("shoe.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  background-color: #FAF7F3;
+}
+
+.Hero-section-container {
+  text-align: center;
+}
+
+.Hero-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.Hero-section p {
+  font-size: 1.2em;
+}
+body{
+  font-family: sans-serif; 
+  background-color: #FAF7F3;
+
+  margin: 0%;
+  padding: 0%;
+}
+.navbar{
+  display: flex;
+  align-items: center; /*HA divs inside navbar*/
+  justify-content: space-between;
+
+  border-bottom: 1px solid #F0E4D3;
+  background-color: #FAF7F3;
+
+}
+
+.navbar-left>ul>li,.navbar-right>ul>li{
+  list-style-type: none;
+  cursor:pointer;
+}
+
+.navbar-left>ul{
+  display: flex;
+  align-items: center; /*HA li inside div left*/
+  justify-content: space-evenly;
+  width: 400px;
+  padding-left: 0;/* the extra 40 padding that comes with ul*/
+}
+
+.navbar-right>ul{
+  display: flex;
+  align-items: center; /*HA li inside div right */
+  padding-left:0;
+  width:100px;
+}
+.hamburger{
+  display:none;
+}
+
+.hamburger{
+  display: block;
+  font-size: 30px;
+  cursor: default;
+  padding-left:20px;
+
+  user-select: none;
+  -webkit-user-select:none;
+  outline:none;
+}
+
+#DDM_items{
+  background-color: #FAF7F3;
+  max-width:200px;
+  padding:0;
+  margin: 0;
+}
+.hide{
+  display:none;
+}
+#DDM_items>ul{
+  list-style-type: none;
+  padding-left:20px;
+  margin:0;
+  border-right: 1px solid #F0E4D3;
+  border-bottom: 1px solid #F0E4D3;
+  height:auto;
+
+}
+#DDM_items>ul>li{
+  padding: 20px;
+}
+
+#DDM_items li{
+  border-bottom: 1px solid #F0E4D3;
+}
+
+
+@media screen and (min-width: 678px){
+.feature-item {
+  padding:70px;
+  background-color:#E0E0E0;
+  z-index:20;
+  border-radius: 20px;
+}
+.features-section>h2{
+  margin-left: 50px;
+}
+}
+
+
+@media screen and (max-width: 678px){
+  .navbar-right{
+    display:none;
+  }
+  .navbar-left{
+    margin-right:25px;
+  }
+  .Hero-section {
+    background-image: url('shoe.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    background-color: #FAF7F3;
+  }
+
+  .Hero-section-container {
+    text-align: center;
+  }
+
+  .Hero-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+
+  .Hero-section p {
+    font-size: 1.2em;
+  }
+  .features-section {
+  padding: 20px;
+  text-align: center;
+}
+.feature-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin: 0;
+  padding: 0;
+}
+.feature-item {
+  font-size: 1.1em;
+}
+
+
+}
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin-bottom: 40px;
+  }
+
+  .social-links li {
+    margin: 0 10px;
+  }
+}
+
